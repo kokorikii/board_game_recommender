@@ -26,6 +26,7 @@ info_df = pd.read_csv('./data/info_df.csv', index_col='name')
 
 final_df = temp_df.join(info_df)
 final_df['Similarity Score'] = final_df['Similarity Score']
+final_df.sort_values(by='Similarity Score', ascending=False, inplace=True)
 
 def path_to_image_html(path):
     '''

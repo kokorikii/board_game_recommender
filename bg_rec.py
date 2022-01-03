@@ -33,7 +33,7 @@ def path_to_image_html(path):
      This function will convert the URL in the thumbnail column to be formatted as HTML.
     '''
 
-    return '<img src="'+ path + '" style=max-height:124px;"/>'
+    return '<img src="'+ path + '" style=max-height:300px;"/>'
 
 # st.dataframe(final_df)
 st.write(final_df.to_html(escape=False, formatters=dict(Thumbnail=path_to_image_html)), unsafe_allow_html=True)

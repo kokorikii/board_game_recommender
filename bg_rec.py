@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 
 pd.set_option('display.max_colwidth', -1)
+pd.options.display.float_format = '{:.2%}'.format
 
 st.title('Find Your Next Boardgame')
 st.header('Choose one of your favorite boardgames from the dropdown and get 10 recommendations based on your choice')
